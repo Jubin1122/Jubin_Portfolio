@@ -4,9 +4,15 @@
     <title>My Portfolio</title>
 
     <link rel="stylesheet" type="text/css" href="css/superslides.css">
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     
+    <link href="vendor/bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
@@ -31,9 +37,128 @@
             <a href="#" class="next"></a>
             <a href="#" class="prev"></a>
         </nav>
-    </div>    
+    </div>
+    
+    <div id="about" class="section">
+        <div class="container">
+            <div class ="row">
+                <div class="col-md-5">
+                    <img class="aboutImage" src="img/about.jpeg">
+                </div>
+                
+                <div class="col-md-7">
+                    <h4>My name is Jubin Mohanty</h4>
+                    
+                    <p>I graduated with a Master's in Data Analytics, with a 
+                        concentration in Machine Learning from Northeastern University, 
+                        and an undergrad in applied electronics and
+                         instrumentation with a Concentration in Digital Image Processing. 
+                    </p>
+                    <p>I have more than 3.5 years of experience. The industries where I was involved are manufacturing, 
+                        healthcare, robotics, aerospace, and the environment. 
+                    </p>
+                    <p>Currently, I am working at Airbus as a Machine Learning Developer. 
+                        I also work part-time for a non-profit organization, Greenstand, as a 
+                        Data Scientist, which has a global initiative to address climate change by tree plantation & technology. Prior to that, I worked as a Data Engineer with Humatics, a Robotics firm in Boston. Also, I did an internship project with EBTC/John Hopkins Bloomberg School of Public Health while I was in Northeastern University, 
+                        where my primary goal was to develop a predictive model.</p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="skills" class="skillsSection section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>TECHNICAL SKILLS</h2>
+                    <p>A representation of my proficiency in each skill</p>
+                </div>
+
+                <div class="owl-carousel owl-theme">
+                    <div class="skill">
+                        <span class="chart" data-percent="92">
+                            <span class="percent">92</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>Python</h4>
+                        <p>Used in Developing Data Pipelines, ML Pipeline, Backend and in Data Analysis</p>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="85">
+                            <span class="percent">85</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>JavaScript</h4>
+                        <p>Used in Developing Data Pipelines, ML Pipeline, Backend and in Data Analysis</p>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="90">
+                            <span class="percent">90</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>Spark</h4>
+                        <p>Used in Developing Data Pipelines, ML Pipeline, Backend and in Data Analysis</p>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="88">
+                            <span class="percent">88</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>AWS</h4>
+                        <p>Used in Developing Data Pipelines, ML Pipeline, Backend and in Data Analysis</p>
+                    </div>
+
+                    <div class="skill">
+                        <span class="chart" data-percent="75">
+                            <span class="percent">88</span>
+                            <canvas height="152" width="152"></canvas>
+                        </span>
+                        <h4>Devops</h4>
+                        <p>Used in Developing Data Pipelines, ML Pipeline, Backend and in Data Analysis</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+   <!-- Skills -->
+   <section class="content-section bg-primary text-white text-center" id="skills">
+     <div class="container">
+       <div class="content-section-heading">
+         <h2 class="mb-2">Skills</h2>
+       </div>
+       <div class="container text-center mb-5">
+        <p class="lead">Below are some of my skills, and I'm always looking to learn more.</p>
+        <p class="lead">(Somewhat outdated, will update soon. Grad student life is very busy!)</p>
+      </div>
+      <div class="row" style="margin-bottom: 48px">
+        <div class="col-lg-4 col-md-6 mb-5">
+          <span class="service-icon rounded-circle mx-auto mb-3 text-secondary">
+            <i class="fa fa-dot-circle-o fa-2x" style="padding-top:19px;">
+            </i>
+          </span>
+          <h4>
+            <b>Computer Vision, OpenCV/OpenGL</b>
+          </h4>
+          <p class="text-faded mb-0">I have significant research experience in the field of computer vision, including <a href="/doc/Computer_Vision_Tools_NV_Centers.pdf" target="blank">Computer Vision Tools for Locating Nitrogren-Vacancy Centers</a>. I've also created dozens of programs using libraries such as OpenCV and OpenGL – these include my <a data-toggle="modal" href="#portfolioModal8">object tracker</a>, <a data-toggle="modal" href="#portfolioModal4">collage generator</a>, <a data-toggle="modal" href="#portfolioModal5">game engine</a>, <a data-toggle="modal" href="#portfolioModal6">ray casting simulation</a>, and many more.</p>
+        </div>
+      </div>
+
+
+     </div>
+   </section>
+
 
     <script src="js/jquery.superslides.js"></script>
+    <script src="js/jquery.easypiechart.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
