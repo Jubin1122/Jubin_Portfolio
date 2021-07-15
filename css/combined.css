@@ -751,7 +751,7 @@ body {
   }
   
   body {
-    font-family: 'Source Sans Pro';
+    font-family: 'system-ui';
   }
   
   .btn-xl {
@@ -768,7 +768,7 @@ body {
   }
   
   .content-section-heading h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
   }
   
@@ -1079,6 +1079,10 @@ body {
     }
   }
   
+  .adj{
+    height: 30px;
+  }
+
   footer.footer {
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -1183,4 +1187,7 @@ body {
       width: 100%;
     }
   }
-  
+  .abc{
+    background-color: white;
+  }
+
