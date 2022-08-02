@@ -325,7 +325,7 @@
 		<div class="container">
 		  <div class="content-section-heading text-center">
 			<h3 class="text-secondary mb-0">Portfolio</h3>
-			<h2 class="mb-2">Personal Projects</h2>
+			<h2 class="mb-2">Projects</h2>
 		  </div>
 		  <div class="container text-center mb-5">
 			<p class="lead">Here you can see some of the projects I've done on my own time.</p>
@@ -421,11 +421,11 @@
 				<a class="portfolio-item" data-toggle="modal" href="#portfolioModal11">
 				  <span class="caption">
 					<span class="caption-content">
-					  <h4>Sparkify Data Pipelines using Airflow</h4>
-					  <p class="mb-0">An ETL pipeline deployement using Apache Airflow.</p>
+					  <h4>Brain Tumor Detection</h4>
+					  <p class="mb-0">To Detect and Classify Brain Tumor using deep learning</p>
 					</span>
 				  </span>
-				  <img class="img-fluid portfolio-img" src="img/portfolio/Apche_airflow.jpg" alt="">
+				  <img class="img-fluid portfolio-img" src="img/portfolio/brainTumor.jpg" alt="">
 				</a>
 			</div>
 
@@ -836,27 +836,20 @@
 			  <div class="row">
 				<div class="col-lg-10 mx-auto">
 				  <div class="modal-body">
-					<h2>Sparkify Data Pipelines using Airflow</h2>
-					<p class="lead">An ETL pipeline deployement using Apache Airflow!!</p>
-					<img class="img-fluid d-block mx-auto" src="img/img/skills_img/airflow.png" alt="SLAM">
-					<p class="lead">Here, I have developed high grade data pipelines that are dynamic and built from reusable tasks, can be monitored, and allow easy backfills. 
-						As data quality plays a big part when analyses are executed on top the data warehouse; 
-						therefore the pipeline will be able to run tests against the datasets after the ETL steps have been executed to catch any discrepancies in the datasets.
+					<h2>Brain Tumor Detection</h2>
+					<p class="lead">To Detect and Classify Brain Tumor using deep learning!!</p>
+					<img class="img-fluid d-block mx-auto" src="img/img/skills_img/tumer.png" alt="SLAM">
+					<p class="lead">In this project we are segmenting organs cells in images. The training annotations are provided as RLE-encoded masks, and the images are in 16-bit grayscale PNG format.
+						The goal is to Detect and Classify Brain Tumor using, CNN or ANN; as an asset of Deep Learning and to examine the tumor position(segmentation).
+In this project, I will be using <b>U-net</b> to perform image segmentation, which has tremendous application in medical imaging. Also, finally we will be able to generalize to both partially and wholly unseen cases.
 					</p>
-					<p class="lead">The source data resides in S3 and needs to be processed in Sparkify's data warehouse in Amazon Redshift. 
-						The source datasets consist of JSON logs that tell about user activity in the application and JSON metadata about the songs the users listen to.
+					<p class="lead">After Validating it with the test data, I found out U-net is highly efficient in locating the area of abnormality with a high segmentation accuracy. The model has delivered 99% IOU and 63.28% of dice coefficient on test data. It can be further improved by increasing the epochs.
 					</p>
-					<p class="lead">I have built a custom operator called 'StageToRedshiftOperator' to stage data from S3(json format) to the Staging table called staging_events and staging_songs using AWS credentials and redshift connection.
-						Moreover, here I have set the context to true and execution date to start date.
-						</p>
-					<p class="lead">Moreover, I have created  acustom operator called LoadFactOperator. This will basically Load data from staging table staging_events to the analytical fact table called songplays. 
-						Also, I have created  LoadDimensionOperator  and DataQualityOperator, which will perform data loading from staging tables to analtical dimension tables and run data quality checks respectively.
-					</p>		
 					<div class="lead mb-4">
 					  <b>View this project on GitHub: </b>
-					  <a href="https://github.com/Jubin1122/Airflow_DataPieline.git" target="blank">https://github.com/Jubin1122/Airflow_DataPieline.git</a>
+					  <a href="https://github.com/Jubin1122/Brain-Tumor-Detection.git" target="blank">https://github.com/Jubin1122/Brain-Tumor-Detection.git</a>
 					  <p></p>
-					  <a href="https://github.com/Jubin1122/Airflow_DataPieline"><img src="https://gh-card.dev/repos/Jubin1122/Airflow_DataPieline.svg"></a>
+					  <a href="https://github.com/Jubin1122/Brain-Tumor-Detection.git"><img src="https://gh-card.dev/repos/Jubin1122/Brain-Tumor-Detection.svg"></a>
 					</div>
 				
 					<a class="btn btn-dark btn-l" data-dismiss="modal" href="#">
@@ -1041,6 +1034,12 @@
 		  </div>
 		  <br>
 		  <div class="row text-center">
+
+			<div class="col-lg-12" style="margin-bottom:12px">
+				<a href="https://github.com/Jubin1122/FuzzyEnginewithActiveLearning_NLP.git" class="lead" target="blank">
+				  <h5 class="mb-0">Fuzzy Utility Engine with Active Learning.</h5></a>
+				<p class="lead" style="line-height:26px">Mashreq | Jubin Mohanty, 2022<br><a href="https://github.com/Jubin1122/FuzzyEnginewithActiveLearning_NLP.git" download="dili_classification.pdf">Download <i class="fa fa-download"></i></a></p>
+			  </div>
 
 			<div class="col-lg-12" style="margin-bottom:12px">
 				<a href="doc/Product_Recommendation_Engine_JubinMohanty.pdf" class="lead" target="blank">
